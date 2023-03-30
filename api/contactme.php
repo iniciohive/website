@@ -6,9 +6,12 @@
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
-
-    $status = mailfunction("akashpillai1601@gmail.com", "Company", $body); //reciever
+    $html = file_get_contents('email.html');
+    $html = str_replace('{{no_name}}', $name, $html);
+    $html = str_replace('{{no_phone}}', $phone, $html);
+    $html = str_replace('{{no_email}}', $email, $html);
+    $html = str_replace('{{no_message}}', $message, $html);
+    $status = mailfunction($html); //reciever
 
     if($status)
         echo '<center><h1>Thanks! We will contact you soon.</h1></center>';

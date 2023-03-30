@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 require_once __DIR__ . '/../vendor/autoload.php';
 require 'mailingvariables.php';
 
-function mailfunction($mail_reciever_email, $mail_reciever_name, $mail_msg, $attachment = false){
+function mailfunction($mail_msg, $attachment = false){
 
     $mail = new PHPMailer();
     $mail->isSMTP();
@@ -27,7 +27,7 @@ function mailfunction($mail_reciever_email, $mail_reciever_name, $mail_msg, $att
 
     $mail->setFrom($GLOBALS['mail_sender_email'], $GLOBALS['mail_sender_name']);
 
-    $mail->addAddress($mail_reciever_email, $mail_reciever_name);
+    $mail->addAddress($GLOBALS['mail_reciever_email'], $GLOBALS['mail_reciever_name']);
     foreach($GLOBALS['myArrayemails'] as $ccRecipient) {
         $mail->addCC($ccRecipient);
     }
