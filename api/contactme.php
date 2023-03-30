@@ -6,7 +6,7 @@
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    $html = file_get_contents('email.html');
+    $html = file_get_contents(__DIR__.'/api/email.html');
     $html = str_replace('{{no_name}}', $name, $html);
     $html = str_replace('{{no_phone}}', $phone, $html);
     $html = str_replace('{{no_email}}', $email, $html);
