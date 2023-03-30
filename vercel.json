@@ -1,9 +1,6 @@
 {
     "functions": {
-        "mailing/*.php": {
-            "runtime": "vercel-php@0.6.0"
-        },
-        "*.php": {
+        "api/*.php": {
             "runtime": "vercel-php@0.6.0"
         }
     }

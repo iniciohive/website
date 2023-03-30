@@ -1,5 +1,5 @@
 <?php   
-    require("./mailing/mailfunction.php");
+    require("mailfunction.php");
 
     $name = $_POST["name"];
     $phone = $_POST['phone'];

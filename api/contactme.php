@@ -1,5 +1,5 @@
 <?php   
-    require("./mailing/mailfunction.php");
+    require("mailfunction.php");
 
     $name = $_POST["name"];
     $phone = $_POST['phone'];
@@ -9,7 +9,7 @@
     $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
 
     $status = mailfunction("akashpillai1601@gmail.com", "Company", $body); //reciever
-    
+
     if($status)
         echo '<center><h1>Thanks! We will contact you soon.</h1></center>';
     else
