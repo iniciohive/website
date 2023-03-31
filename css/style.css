@@ -16,6 +16,8 @@ html{
 
 body{
     overflow-x: hidden;
+    top: 0%;
+    left: 0%;
 }
 
 .heading, .clients .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4{
@@ -99,7 +101,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 97%;
     height: auto;
     padding: 1rem 2rem;
     position: fixed;
@@ -146,6 +148,7 @@ body{
     cursor: pointer;
     font-size: 3rem;
     display: none;
+    margin: 0%;
 }
 
 .home{
