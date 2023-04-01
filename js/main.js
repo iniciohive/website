@@ -50,8 +50,12 @@ $(document).ready(function(){
         autoplay: true,
         dots: true,
         loop: true,
-        responsive: { 0: {items: 1}, 576: {items: 2}, 768: {items: 3}, 992: {items: 4} }
+        responsive: { 0: {items: 1}, 576: {items: 1}, 768: {items: 2}, 992: {items: 3} },
+        touchDrag: false,
+  mouseDrag: false
     });
+
+    
     
 })(jQuery);
 
