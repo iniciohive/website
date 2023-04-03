@@ -72,10 +72,17 @@ $('.back-to-top').click(function () {
 });
 
 $('.accordion-header').click(function(){
-    $('.accordion .accordion-body').slideUp(500);
-    $(this).next('.accordion-body').slideDown(500);
-    $('.accordion .accordion-header span').text('+');
-    $(this).children('span').text('-');
+    var accordionBody = $(this).next('.accordion-body');
+    if (accordionBody.is(':visible')) {
+        accordionBody.slideUp(700, 'easeOutQuart');
+        $(this).children('span').text('+');
+    } else {
+        $('.accordion .accordion-body').slideUp(700, 'easeOutQuart');
+        $('.accordion .accordion-header span').text('+');
+        accordionBody.slideDown(700, 'easeOutQuart');
+        $(this).children('span').text('-');
+    }
 });
+
 
 });
