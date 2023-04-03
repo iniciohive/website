@@ -25,7 +25,7 @@ body{
     padding-top: 6rem;
     display: inline-block;
     font-size: 3.5rem;
-    color: #001b30;
+    color: #ff9418;
     position: relative;
     letter-spacing: .2rem;
 }
@@ -609,7 +609,7 @@ body{
 }
 
 .team .heading::before, .team .heading::after{
-    border-color: #00bfff;
+    border-color: #001b30;
 }
 
 .team .row{
