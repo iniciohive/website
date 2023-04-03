@@ -671,8 +671,17 @@ body{
     padding: 1rem;
 }
 
-.team .row .card .info .icons .fa-facebook-f:hover, .footer .icons .fa-facebook-f:hover{
+.team .row .card .info .icons .fa-facebook-f:hover, .footer .icons .fa-facebook-f:hover, .team .row .card .info .icons .fa-telegram:hover{
     color: #4267B2;
+    text-decoration: none;
+}
+
+.team .row .card .info .icons .fa-globe:hover{
+    color: #ff9418;
+    text-decoration: none;
+}
+.team .row .card .info .icons .fa-github:hover{
+    color: #8241f9;
     text-decoration: none;
 }
 
