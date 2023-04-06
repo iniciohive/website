@@ -104,7 +104,6 @@ body{
     width: 100%;
     height: auto;
     padding: 1rem 2rem;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -112,8 +111,8 @@ body{
 }
 
 .header .logo img{
-    width: auto;
-    height: 3rem;
+    width: 50px;
+    height: 50px;
     top: 0;
     left: 0;
 }
@@ -1103,8 +1102,8 @@ body{
     }
 
     .header .logo img{
-        width: 20%;
-        height: 3rem;
+        width: 50px;
+        height: 50px;
         top: 0;
         left: 0;
         background-size: cover;
