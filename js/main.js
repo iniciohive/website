@@ -1,4 +1,4 @@
-if (window.location.href==="https://iniciohive.github.io") {
+if (window.location.href==="https://iniciohive.github.io/website/") {
 		window.location.href = "https://www.iniciohive.tech/"; 
 }
 $(document).ready(function(){
