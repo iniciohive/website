@@ -1,5 +1,7 @@
+if (window.location.href==="https://iniciohive.github.io") {
+		window.location.href = "https://www.iniciohive.tech/"; 
+}
 $(document).ready(function(){
-
      $('.fa-bars').click(function(){
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
