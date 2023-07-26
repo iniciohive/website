@@ -17,8 +17,8 @@ if ( !$captcha ) {
     echo '<center><h1>Invalid Captcha! Please try again.</h1></center>';
     exit;
 }
-// $status = mailfunction( $html );
-$status =  true;
+
+$status = mailfunction( $html );
 
 if ( $status )
 echo '<center><h1>Thanks! We will contact you soon.</h1></center>';
