@@ -8,4 +8,5 @@
     $mail_sender_email = getenv('sender_mail'); //sender
     $mail_sender_password = getenv('sender_pass'); //sender
     $mail_sender_name = "Website Form";
+    $secret_key = getenv('secret_key');
 ?>
